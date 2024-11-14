@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "name": "liquidity",
+      "type": "com.example.inventory.management.inventory_management.config.LiquidityPoolConfig",
+      "sourceType": "com.example.inventory.management.inventory_management.config.LiquidityPoolConfig"
+    },
+    {
+      "name": "liquidity.threshold-multipliers",
+      "type": "com.example.inventory.management.inventory_management.config.LiquidityPoolConfig$ThresholdMultipliers",
+      "sourceType": "com.example.inventory.management.inventory_management.config.LiquidityPoolConfig",
+      "sourceMethod": "getThresholdMultipliers()"
+    },
+    {
+      "name": "settlement",
+      "type": "com.example.inventory.management.inventory_management.config.SettlementConfig",
+      "sourceType": "com.example.inventory.management.inventory_management.config.SettlementConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "liquidity.default-balances",
+      "type": "java.util.Map<java.lang.String,java.math.BigDecimal>",
+      "sourceType": "com.example.inventory.management.inventory_management.config.LiquidityPoolConfig"
+    },
+    {
+      "name": "liquidity.threshold-multipliers.lower",
+      "type": "java.math.BigDecimal",
+      "sourceType": "com.example.inventory.management.inventory_management.config.LiquidityPoolConfig$ThresholdMultipliers"
+    },
+    {
+      "name": "liquidity.threshold-multipliers.upper",
+      "type": "java.math.BigDecimal",
+      "sourceType": "com.example.inventory.management.inventory_management.config.LiquidityPoolConfig$ThresholdMultipliers"
+    },
+    {
+      "name": "settlement.times",
+      "type": "java.util.Map<java.lang.String,java.lang.Integer>",
+      "sourceType": "com.example.inventory.management.inventory_management.config.SettlementConfig"
+    }
+  ],
+  "hints": []
+}

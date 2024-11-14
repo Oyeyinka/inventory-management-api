@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.inventory.management.inventory_management.service.TransferServiceImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-14T14:03:02" hostname="Oyeyinka-MacBook-Pro-2335.local" time="0.092">
+  <properties/>
+  <testcase name="shouldProcessTransferSuccessfully()" classname="com.example.inventory.management.inventory_management.service.TransferServiceImplTest" time="0.081"/>
+  <testcase name="shouldFailTransferDueToInsufficientFunds()" classname="com.example.inventory.management.inventory_management.service.TransferServiceImplTest" time="0.006"/>
+  <testcase name="shouldFailTransferDueToFXRateNotFound()" classname="com.example.inventory.management.inventory_management.service.TransferServiceImplTest" time="0.003"/>
+  <system-out><![CDATA[09:03:02.773 [Test worker] INFO com.example.inventory.management.inventory_management.service.TransferServiceImpl -- Initiating transfer from USD to EUR with amount 100
+09:03:02.776 [Test worker] INFO com.example.inventory.management.inventory_management.service.TransferServiceImpl -- Debited 93.5000 from USD pool
+09:03:02.778 [Test worker] INFO com.example.inventory.management.inventory_management.service.TransferServiceImpl -- Credited 85.0000 to EUR pool immediately
+09:03:02.779 [Test worker] INFO com.example.inventory.management.inventory_management.service.TransferServiceImpl -- Recorded revenue for transaction null: EUR 8.5000
+09:03:02.784 [Test worker] INFO com.example.inventory.management.inventory_management.service.TransferServiceImpl -- Initiating transfer from USD to EUR with amount 100
+09:03:02.785 [Test worker] ERROR com.example.inventory.management.inventory_management.service.TransferServiceImpl -- Transfer failed: Insufficient funds in USD pool
+09:03:02.790 [Test worker] INFO com.example.inventory.management.inventory_management.service.TransferServiceImpl -- Initiating transfer from USD to EUR with amount 100
+09:03:02.791 [Test worker] ERROR com.example.inventory.management.inventory_management.service.TransferServiceImpl -- Transfer failed: FX Rate not available for USD/EUR
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
